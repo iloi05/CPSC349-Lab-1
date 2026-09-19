@@ -8,6 +8,9 @@
         <a href="registration.html">Registration</a>
         <br>
         <br>
+        <!--The browser placed the form data in http://localhost:5500/register?name=John+Smith&password=abc123&level=Sophmore&interest=web&interest=AI&major=cs.-->
+        <!--When using POST, the form data to http://localhost:5500/register-->
+        <!--Live Server returns 405 Method for the POST request because it is rejected the method we used, which in this case is POST-->
         <form action="/register" method="POST">
             <label for="name">Student Name: </label>
             <input type="text" id="name" name="name">
@@ -47,7 +50,6 @@
             <button type="submit">
                 Register
             </button>
-            <!--The browser placed the form data in the URL of the request.-->
         </form>
     </body>
 </html>
