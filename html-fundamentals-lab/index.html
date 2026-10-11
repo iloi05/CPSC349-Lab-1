@@ -1,31 +1,62 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Student Portal</title>
-    </head>
+<html> 
     <body>
-        <h1>Student Portal</h1>
+        <header>
+            <h1>Student Portal</h1>
+        </header>
+        <nav>
         <a href="index.html">Home</a> |
         <a href="courses.html">Courses</a> |
         <a href="registration.html">Registration</a>
+        </nav>
+        <!-- Removed redundant navigation links as they are now inside the <nav> element -->
         <!--Question 1: The browser used the HTTP method 'GET' when I cliked the hyperlink.-->
-        <h2>
-            Welcome
-        </h2>
+        <main>
+            <section>
+                <h2>
+                    Welcome
+                </h2>
+                <p>
+                    Welcome to the Student Portal.
+                </p>
+            </section>
+                <img src="images/Glerpert_hi.jpg" 
+                alt="Glerpert saying hi." 
+                title="Glerpert"
+                width="300"
+                >
+            <section>
+                <h2>Latest News</h2>
+            </section>
+            <section>
+                <article>
+                    <h3>Fall Registration</h3>
+                    <p>
+                        Fall registraton is now open
+                    </p>
+                </article>  
+            </section>
+        </main>
+        <footer>
+            &copy; 2026 Student Portal
+        </footer>
+        <section>
+            <article>
+                <p>
+                This is a lab assignment for <strong>CPSC349</strong>. 
+                The goal is to practice basic HTML fundamentals while creating a simple student portal.
+                <strong>Important:</strong>
+                Students should <em> review course information</em> before registering.
+                </p>
+            </article>
+        </section>
+        <!-- Removed redundant closing </main> tag -->
+        
+
         <!--Question 2: The differnce between alt and title 
         is that alt gives  a descript of the image if it does not appear on the browser,
         title gives additional information about the image when hovered over.-->
-        <img src="images/Glerpert_hi.jpg" 
-        alt="Glerpert saying hi." 
-        title="Glerpert"
-        width="300"
-        >
-        <p>
-            This is a lab assignment for <strong>CPSC349</strong>. 
-            The goal is to practice basic HTML fundamentals while creating a simple student portal.
-            <strong>Important:</strong>
-            Students should <em> review course information</em> before registering.
-        </p>
+        
         <h3>Available Programs</h3>
         <!--Question 3: The difference between <ul> and <ol>
         is that <ul> creates an unordered list with bullet points, 
@@ -45,10 +76,11 @@
         <p>
             HTML uses &lt; and &gt; to identify tags.
         </p>
-        <p>
-            &copy; 2026 Student Portal
-        </p>
+        
         <!--Question 8: HTML entities are need to display special characters,
         without them, we would not be able to display special characters correctly, like < and >.-->
+        <!--Question 9: The advantage of using semantic elements is that 
+        they provide meaning to the structure of the webpage, 
+        making it easier for both developers and browsers to understand the content.-->
     </body>
 </html>
