@@ -9,7 +9,7 @@
         <a href="registration.html">Registration</a>
         <br>
         <br>
-        <form action="/register" method="GET">
+        <form action="/register" method="POST">
             <label for="name">Student Name:</label>
             <input type="text" id="name" name="name">
             <label for="password">Password:</label>
@@ -40,6 +40,9 @@
             <br><br>
             <button type="submit">Register</button>
             <!--Question 5: When using GET, the browser placed the form data in the URL as query parameters.-->
+            <!--Question 6: When using POST, the form data is sent in the request body, not in the URL.-->
+            <!--Question 7: Live Server returns 405 Method Not Allowed for the POST request 
+            because it does not support handling POST requests.-->
         </form>
     </body>
 </html>
